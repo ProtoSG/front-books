@@ -1,15 +1,14 @@
-import { ButtonFooter } from "./components/ButtonFooter"
-import Header from "./components/Header"
+import { Route, Routes } from "react-router-dom"
 import { Home } from "./pages/Home"
+import { Login_SignUp } from "./pages/Login_SignUp"
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Home />
-      <ButtonFooter />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login-signup" element={<Login_SignUp />} />
+    </Routes>
   )
 }
 
