@@ -11,7 +11,7 @@ export const Button: FC<Props> = ({ type, text, onClick }) => {
     <button
       onClick={onClick}
       type={type}
-      className="bg-primary p-4 rounded-full hover:bg-primary/70 transition-all">
+      className="bg-primary px-12 py-4 rounded-full hover:bg-primary/70 transition-all outline-0">
       {text}
     </button>
   )

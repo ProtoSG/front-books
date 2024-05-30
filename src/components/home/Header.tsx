@@ -9,11 +9,17 @@ export const Header = () => {
       <form className="flex items-center justify-center">
         <Input type="text" placeholder="Buscar..." />
       </form>
-      <div className="flex font-bold justify-end bg-red-400 items-center gap-2">
+      <div className="flex font-bold justify-end  items-center gap-4">
+        <Link to="/" className="hidden lg:block hover:scale-125 transition-all hover:underline">
+          <span>Inicio</span>
+        </Link>
+        <Link to="/books" className="hidden lg:block hover:scale-125 transition-all hover:underline">
+          <span>Libros</span>
+        </Link>
         <Link to="/login-signup" className="flex lg:hidden absolute top-6 hover:scale-125 transition-all">
           <User className="size-8" />
         </Link>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex gap-2">
           <button className="hover:scale-110 transition-transform">Iniciar Sesión</button>
           <span>/</span>
           <button className="underline text-primary hover:scale-110 transition-transform">Registrarse</button>

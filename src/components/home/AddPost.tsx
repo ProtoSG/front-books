@@ -11,12 +11,7 @@ export const AddPost = () => {
   return (
     <dialog id="dialog-add-post" className="bg-bg text-white rounded-2xl m-auto border-none px-10 py-3 transition-all  w-[95%] lg:w-full backdrop:backdrop-blur-sm backdrop:bg-black/50  max-w-[500px] fixed">
       <h3 className="text-2xl text-center my-4">Crear Publicación</h3>
-      <span
-        className="absolute top-8 right-5 cursor-pointer hover:scale-125 hover:text-primary hover:font-bold transition-transform"
-        onClick={handleClose}
-      >
-        <Close />
-      </span>
+      <Close onClick={handleClose} />
       <hr className="border-secundary" />
       <form className="my-6 flex flex-col gap-8">
         <label className="flex flex-col">

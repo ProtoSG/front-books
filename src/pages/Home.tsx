@@ -5,7 +5,6 @@ import { ButtonFooter } from '../components/home/ButtonFooter'
 export const Home = () => {
   return (
     <>
-      <Header />
       <MainHome />
       <ButtonFooter />
     </>
